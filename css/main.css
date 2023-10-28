@@ -1,0 +1,15 @@
+/* About */
+
+#hover-text {
+  height: 30px;
+  width: 60px;
+  color: rgb(11, 11, 56);
+}
+
+.hidden-text {
+  display: none;
+}
+
+#hover-text:hover .hidden-text{
+  display: block;
+}
