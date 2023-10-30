@@ -8,6 +8,8 @@ body {
   background-color: #F2F2F2;
 }
 
+/* * Navbar */
+
 .header {
   position: relative;
   top: 0;
@@ -16,20 +18,10 @@ body {
   padding: 15px;
   background-color: #E6E5E5;
   backdrop-filter: blur(40px);
-  display:flex;
+  display: flex;
   justify-content: space-between;
   align-items: center;
   z-index: 100;
-}
-
-.navbar a:after {
-  content: "";
-  position: absolute;
-  top: 40px;
-  left: 50%;
-  margin-left: -15px;
-  width: 0px;
-  height: 0px;
 }
 
 .name {
@@ -52,18 +44,33 @@ body {
   -webkit-background-clip: text;
 }
 
-/* About */
+/* * Title */
 
-#hover-text {
-  height: 30px;
-  width: 60px;
-  color: rgb(11, 11, 56);
+#title-container {
+  font-size: 230%;
+  padding: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
 
-.hidden-text {
-  display: none;
+/* .console-underscore {
+  display: flex;
+  flex-direction: row;
+  background-color: #F2F2F2;
 }
+.console-underscore .hidden {
+  opacity: 0;
+  background-color: #F2F2F2;
+}
+
+.hidden-text {}
 
 #hover-text:hover .hidden-text {
   display: block;
-}
+  color: #FF340A;
+} */
+
+/* * About */
