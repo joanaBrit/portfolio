@@ -6,42 +6,88 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script defer src="js/main.js"></script>
   <link rel="stylesheet" href="css/main.css">
-  <title>Portfolio</title>
+  <title>My Portfolio</title>
+  <!-- favicon -->
+  <!-- <link href="" -->
 </head>
 
 <body>
-  <main>
-    <nav>
-      <p>Joana Brito</p>
-      <a href="about.html">About Me</a>
-      <a href="projects.html">Projects</a>
-      <a href="experience.html">Experience</a>
-      <a href="contact.html">Contact</a>
+  <header class="header">
+    <a href="#" class="name">Joana Brito</a>
+    <nav class="navbar">
+      <a href="#about">About</a> 
+      <a href="#projects">Projects</a> 
+      <a href="#experience">Experience</a> 
+      <a href="#contact">Contact</a>
     </nav>
-    <section class="about-me">
+  </header>
+
+    <main>
+    <section id="principal-text">
       <div class="text-title"></div>
       <h1>Joana Brito</h1>
       <div class="text-about-me"></div>
       <p>I'm a Full-Stack Web Developer and </p>
       <div id="hover-text">
-        <div id="hidden-text">
+        <div class="hidden-text">
           <p>a Fashion Designer</p>
         </div>
       </div>
-      <div class="skills"></div>
     </section>
-    <section class="project">
+
+    <section id="about">
+      <div id="about-me">
+        <h2>About Me</h2>
+        <img src="" alt="profile picture">
+        <a href="contact.html" class="contact-link">Say Hello!</a>
+        <p>My background as a Fashion Design is perhaps an unconventional one in software development.
+
+          I first applied to the course with the encouragement of my friends and family, but was not entirely sure if it
+          was for me.
+          However, as I learned more, I discovered a new passion in coding. It's amazing to see what you can create with
+          a simple line of code.
+          I found a new spark of curiosity and joy as I discovered the same opportunities for experimenting,
+          problem-solving, continuous learning, and being creative as I did in fashion.
+
+          I am excited to embark on this journey as a Software Engineer. I'm eager to further develop my abilities,
+          expand my knowledge, and embrace the challenge of achieving what I once considered impossible.</p>
+      </div>
+      <div id="skills">
+        <!-- icons -->
+      </div>
+
+    </section>
+    <section id="project">
       <div></div>
     </section>
-    <section class="experience">
+
+    <section id="experience">
 
     </section>
-    <section class="interests">
 
+    <section id="interests">
+      <div class="interest-icons">
+        <img src="" alt="nature">
+        <img src="" alt="fashion">
+        <img src="" alt="fruits">
+      </div>
+      <div>
+        <p></p>
+        <p></p>
+        <p></p>
+      </div>
     </section>
-    <section class="contact">
 
+    <section id="contact">
+      <h2>Contact</h2>
+      <div class="social-links mt-3 text-center">
+        <a href="" class="github"></a>
+        <a href="" class="linkedin">
+        <a href="" class="instagram">
+        <a href="" class="email">
+      </div>
     </section>
+
   </main>
 </body>
 
