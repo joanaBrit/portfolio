@@ -8,7 +8,7 @@ body {
   background-color: #F2F2F2;
 }
 
-/* * Navbar */
+/** Navbar */
 
 .header {
   position: relative;
@@ -33,18 +33,18 @@ body {
 
 .navbar a {
   font-size: 18px;
-  color: #fff;
+  color: #FF340A;
   text-decoration: none;
   font-weight: 500;
 }
 
 .navbar a:hover {
-  background-color: #FF340A;
+  background-color: #fff;
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
 }
 
-/* * Title */
+/** Title */
 
 #title-container {
   font-size: 230%;
@@ -54,6 +54,34 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
+}
+
+#skill-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+}
+
+.icons-container .icons {
+  display: grid;
+  grid-template-columns: repeat(6, 2fr);
+  gap: 4rem 3rem;
+}
+
+.icons-container .icons .bi {
+  /*no icons yet*/
+  cursor: pointer;
+  font-size: 30px;
+  padding: 1.5rem 2rem;
+  border-radius: 50%;
+  background-color: #FF340A;
+  background-size: 200%;
+  transition: background 0.3s ease-in-out;
+}
+
+.icons-container .icons .bi:hover {
+  background-position: right;
 }
 
 /* .console-underscore {
@@ -73,4 +101,31 @@ body {
   color: #FF340A;
 } */
 
-/* * About */
+/** About */
+
+/* *Interests */
+.interest-icons {
+  display: flex;
+}
+
+/** Contact */
+
+.social-links {
+  background-color: #E6E5E5;
+  text-decoration: none;
+  padding: 10px;
+}
+
+.social-links a {
+  color: #FF340A;
+  padding: 3px;
+  
+}
+/* 
+.social-links .bi {
+  border-radius: 50%;
+  background-color: #E6E5E5;
+} */
+.social-links a:hover {
+  color: black;
+}
