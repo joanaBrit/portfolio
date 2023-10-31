@@ -10,10 +10,7 @@ body {
 
 /** Navbar */
 
-.header {
-  position: relative;
-  top: 0;
-  left: 0;
+/* #main-nav {
   width: 100%;
   padding: 15px;
   background-color: #E6E5E5;
@@ -22,23 +19,51 @@ body {
   justify-content: space-between;
   align-items: center;
   z-index: 100;
+  transition: top 0.3s;
+} */
+#main-nav {
+  overflow: hidden;
+  background-color: #c3c0c06e;
+  display: flex;
+  justify-content: space-between;
+  backdrop-filter: blur(7px);
 }
 
-.name {
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  box-shadow: 3px 0em 1em 0px;
+}
+
+#main-nav a {
+  float: left;
+  display: block;
+  font-size: 18px;
+  color: #FF340A;
+  text-decoration: none;
+  padding: 15px;
+}
+
+a {
+  list-style-type: none;
+  margin: 0;
+}
+
+.nav-name {
   font-size: 20px;
   color: #FF340A;
   text-decoration: none;
   pointer-events: none;
-}
-
-.navbar a {
-  font-size: 18px;
-  color: #FF340A;
-  text-decoration: none;
   font-weight: 500;
+  padding-left: 15px;
 }
 
-.navbar a:hover {
+.nav-pages {
+  padding-right: 15px;
+}
+
+.nav-pages a:hover {
   background-color: #fff;
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
@@ -70,7 +95,7 @@ body {
 }
 
 .icons-container .icons .bi {
-  /*no icons yet*/
+  /*!no icons yet*/
   cursor: pointer;
   font-size: 30px;
   padding: 1.5rem 2rem;
@@ -119,13 +144,14 @@ body {
 .social-links a {
   color: #FF340A;
   padding: 3px;
-  
 }
+
 /* 
 .social-links .bi {
   border-radius: 50%;
   background-color: #E6E5E5;
 } */
+
 .social-links a:hover {
   color: black;
 }

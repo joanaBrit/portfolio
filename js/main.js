@@ -1,3 +1,23 @@
+// ? Navbar scroll
+
+window.onscroll = function() {scrollNav()}
+
+const nav = document.getElementById("main-nav")
+const sticky = nav.offsetTop
+
+function scrollNav() {
+  if (window.scrollY >= sticky ) {
+    nav.classList.add("sticky")
+  } else {
+    nav.classList.remove("sticky")
+  }
+}
+
+
+
+
+
+
 //? Title typing effect
 
 // consoleText(['a Fashion Designer'],
@@ -15,7 +35,7 @@
 //   }
 // }
 
-const text = 'I\'m a Full-Stack Web Developer and a Fashion Designer'
+const text = 'I\'m a Full-Stack Web Developer and a Fashion Designer.'
 
 let index = 0
 let type = document.getElementById('text-type')
