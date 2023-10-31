@@ -68,9 +68,35 @@ a {
 
 .nav-pages a:hover {
   background-color: #333;
-  ;
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
+}
+
+.hero-arrow {
+  color: white;
+  align-self: center;
+  font-size: 35px;
+  margin-top: 75px;
+  animation: bounce 1.5s linear infinite;
+}
+
+.bi-arrow-down:before {
+  content: "\f063";
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+}
+25%, 75% {
+    transform: translateY(-15px);
+}
+50% {
+    transform: translateY(-20px);
+}}
+
+.bi {
+  font-weight: 900;
 }
 
 /* Angle */
@@ -253,8 +279,8 @@ a {
 }
 
 .sub-reversedangle {
-  margin-right: 70px;
-  margin-left: 0px;
+  margin-left: 70px;
+  margin-right: 0px;
   background-color: #FF340A;
   position: relative;
   height: 180px;
@@ -270,10 +296,6 @@ a {
   -webkit-transform: skewY(5deg);
   transform: skewY(-5deg);
   padding-left: 0px;
-  /* height: 180px;
-  width: 100%;
-  background-color: #FF340A; */
-  /* background: linear-gradient(135deg, transparent 15px, #FF340A 15px, #FF340A 100%) */
 }
 
 .sub-angle {
