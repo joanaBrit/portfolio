@@ -248,11 +248,35 @@ a {
 .angle4 {
   -ms-transform: skewY(5deg);
   -webkit-transform: skewY(5deg);
-  transform: skewY(-5deg);
+  transform: skewY(5deg);
   padding-left: 0px;
 }
 
-.sub-reversedangle{
+.sub-reversedangle {
+  margin-right: 70px;
+  margin-left: 0px;
+  background-color: #FF340A;
+  position: relative;
+  height: 180px;
+  color: #f3f3f3;
+  -ms-transform: skewY(5deg);
+  transform: skewY(355deg);
+}
+
+/*? Interests */
+
+.angle5 {
+  -ms-transform: skewY(5deg);
+  -webkit-transform: skewY(5deg);
+  transform: skewY(-5deg);
+  padding-left: 0px;
+  /* height: 180px;
+  width: 100%;
+  background-color: #FF340A; */
+  /* background: linear-gradient(135deg, transparent 15px, #FF340A 15px, #FF340A 100%) */
+}
+
+.sub-angle {
   margin-right: 70px;
   margin-left: 0px;
   background-color: #FF340A;
@@ -263,10 +287,14 @@ a {
   transform: skewY(5deg);
 }
 
-/*? Interests */
-
-
 /*? Contact */
+
+#contact h2 {
+  color: #FF340A;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
 
 .social-links {
   background-color: #E6E5E5;
