@@ -35,7 +35,7 @@ function scrollNav() {
 //   }
 // }
 
-const text = 'I\'m a Full-Stack Web Developer and a Fashion Designer.'
+const text = 'Hi! I\'m a Full-Stack Web Developer and a Fashion Designer.'
 
 let index = 0
 let type = document.getElementById('text-type')
