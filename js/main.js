@@ -1,6 +1,6 @@
 // ? Navbar scroll
 
-window.onscroll = function() {scrollNav()}
+// window.onscroll = function() {scrollNav()}
 
 const nav = document.getElementById("main-nav")
 const sticky = nav.offsetTop
