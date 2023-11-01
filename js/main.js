@@ -13,11 +13,6 @@ function scrollNav() {
   }
 }
 
-
-
-
-
-
 //? Title typing effect
 
 // consoleText(['a Fashion Designer'],
@@ -43,9 +38,11 @@ let intervalID
 
 function writeText() {
   type.innerHTML = text.slice(0, index)
-  index++
+  
   if (index > text.length) {
     clearInterval(intervalID)
+  } else {
+    index++
   }
 }
 intervalID = setInterval(writeText, 100)
