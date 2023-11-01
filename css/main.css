@@ -110,6 +110,7 @@ a {
 
 
 /*? Title */
+/* !VH */
 
 .title {
   background-color: #FF340A;
@@ -118,13 +119,13 @@ a {
 
 .title-container {
   font-size: 200%;
-  padding: 284px;
+  padding: 20px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  height: 100vh;
   color: #f3f3f3;
+  gap: 20px;
 }
 
 p {
@@ -314,12 +315,10 @@ i {
 } */
 
 
-
-
-
 /*? Projects */
 
-.sub-angle, .sub-reversedangle{
+.sub-angle,
+.sub-reversedangle {
   margin-bottom: 6rem;
 }
 
@@ -328,8 +327,21 @@ i {
   padding: 100px 0;
 }
 
+.project1,
+.project2,
+.project3,
+.project4 {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
 .image {
   width: 40rem;
+}
+
+.technologies {
+  display: flex;
 }
 
 .angle3 {
@@ -350,16 +362,6 @@ i {
   transform: skewY(5deg);
 }
 
-/* .angle3:after { */
-/* content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: #F2F2F2;
-  clip-path: polygon(100% 0, 100% 100%, 0 100%); */
-/* } */
 
 /*? Experience */
 
@@ -368,6 +370,37 @@ i {
   padding: 100px 0;
 }
 
+.experience-container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  gap: 50px;
+  margin: 0 200px;
+}
+
+.experience-container img {
+  width: 100px;
+  height: 100px;
+  padding: 5px;
+  margin: 15px;
+  background-size: cover;
+}
+
+.ga,
+.fashion-assistant,
+.visual-merchandiser {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.exp-text {
+  margin-left: 30px;
+}
+
+h3 span {
+  font-size: 22px;
+}
 
 .angle4 {
   -ms-transform: skewY(5deg);
@@ -395,7 +428,7 @@ i {
   padding: 100px 0;
 }
 
-.interest-icon-container{
+.interest-icon-container {
   border-radius: 50%;
   background-color: #F2F2F2;
   border: 2px solid #FF340A;
@@ -409,7 +442,6 @@ i {
 
 .interest-icons img {
   width: 59px;
-  
   padding: 5px;
   margin: 15px;
   background-size: cover;
