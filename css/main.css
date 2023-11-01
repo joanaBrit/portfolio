@@ -72,37 +72,10 @@ a {
   -webkit-background-clip: text;
 }
 
-.hero-arrow {
-  color: white;
-  align-self: center;
-  font-size: 35px;
-  margin-top: 75px;
-  animation: bounce 1.5s linear infinite;
-}
-
-.bi-arrow-down:before {
-  content: "\f063";
-}
-
-@keyframes bounce {
-  0%, 100% {
-    transform: translateY(0);
-}
-25%, 75% {
-    transform: translateY(-15px);
-}
-50% {
-    transform: translateY(-20px);
-}}
-
-.bi {
-  font-weight: 900;
-}
-
 /* Angle */
 
 .angle1 {
-  height: 180px;
+  height: 190px;
   width: 100%;
   background-color: #F2F2F2;
 }
@@ -115,7 +88,8 @@ a {
   width: 100%;
   height: 100%;
   background-color: #FF340A;
-  clip-path: polygon(100% 0, 100% 100%, 0 100%);
+  clip-path: polygon(100% 30%, 100% 100%, 0 100%);
+  border: none;
 }
 
 
@@ -156,9 +130,34 @@ a {
 
 .arrow {
   display: flex;
-  justify-content: center;
-  height: 60px;
-  font-size: 36px;
+  justify-content: center;juhli
+}
+
+.hero-arrow {
+  color: #f3f3f3;
+  align-self: center;
+  font-size: 35px;
+  margin-top: 75px;
+  animation: bounce 1.5s linear infinite;
+}
+
+.bi-arrow-down:before {
+  content: "\f063";
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+}
+25%, 75% {
+    transform: translateY(-15px);
+}
+50% {
+    transform: translateY(-20px);
+}}
+
+.bi {
+  font-weight: 900;
 }
 
 #skill-icons {
