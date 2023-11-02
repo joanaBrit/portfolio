@@ -1,7 +1,5 @@
 //? Navbar scroll
 
-// window.onscroll = function() {scrollNav()}
-
 const nav = document.getElementById("main-nav")
 const sticky = nav.offsetTop
 
@@ -14,15 +12,55 @@ function scrollNav() {
 }
 
 
-// //? Button redirect
+// //? scroll "github" horizontally
 
-// const linkBtn = document.getElementById("link-button")
-// const gitBtn = document.getElementById("git-btn")
+const scrollSides = document.querySelectorAll('.scroll-side')
+let lastScrollPositions = new Array(scrollSides.length).fill(0)
+let isMoving = new Array(scrollSides.length).fill(false)
+// when github is stop color
+scrollSides.forEach((scrollSide, i) => {
 
-// linkBtn.addEventListener("click", function () {
-//   window.location.href = ""
-// })
+  scrollSide.addEventListener('transitionend', () => {
+    isMoving[i] = false
+    scrollSide.style.backgroundColor = 'transparent'
+    scrollSide.style.color = '#3C3C3C'
+  })
+})
+window.addEventListener('scroll', () => {
 
+  const scrollY = window.scrollY
+
+  scrollSides.forEach((scrollSide, i) => {
+    // track previous position
+    const scrollDelta = scrollY - lastScrollPositions[i]
+    lastScrollPositions[i] = scrollY
+
+    // Color when is moving
+    isMoving[i] = Math.abs(scrollDelta) > 0
+
+    // retrive the current transformation
+    const currentTransform = getComputedStyle(scrollSide).transform
+
+    if (currentTransform) {
+      const currentTranslateX = parseFloat(currentTransform.split(',')[4])
+      // maxium limit for horizontal move
+      const maxTranslateX = 200
+      // new horizontal position
+      const newTranslateX = currentTranslateX - scrollDelta
+      const finalTranslateX = Math.min(maxTranslateX, Math.max(4, newTranslateX))
+      // Make sure doesn't pass the limit
+      scrollSide.style.transform = `translateX(${finalTranslateX}px)`
+
+      if (isMoving[i]) {
+        scrollSide.style.backgroundColor = '#ff340adb'
+        scrollSide.style.color = '#f3f3f3'
+      } else {
+        scrollSide.style.backgroundColor = 'transparent'
+        scrollSide.style.color = '#3C3C3C'
+      }
+    }
+  })
+})
 
 //? Title typing effect
 

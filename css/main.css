@@ -354,13 +354,30 @@ i {
   flex-direction: column;
   gap: 1rem;
 }
+
 /* ! I want gap 0 and then git hub button move rigth 5rem when scroll down */
 .project-links {
-  gap: 3rem;
+  gap: 4px;
   display: flex;
   justify-content: flex-start;
   padding: 10px;
+  position: relative;
+  overflow-x: hidden;
 }
+
+.project-links a.scroll-side {
+  transform: translateX(0); 
+  transition: transform 275ms ease;
+}
+
+
+/* .project-links a.scroll-side:before {
+  display: inline-block;
+  content: attr(data-content);
+  color: #3C3C3C;
+  transform: translateY(0%);
+  transition: transform 275ms ease;
+}  */
 
 .project-links a {
   text-decoration: none;
