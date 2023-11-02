@@ -7,6 +7,7 @@
 body {
   color: #3C3C3C;
   background-color: #F2F2F2 !important;
+  font-family: 'Roboto Mono', monospace !important;
 }
 
 h2 {
@@ -327,6 +328,63 @@ i {
   padding: 100px 0;
 }
 
+.projects-container {
+  display: flex;
+  gap: 6rem;
+  max-width: 1280px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 8%;
+  align-items: center;
+  flex-direction: column;
+}
+
+.text-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.project-links {
+  gap: 0.5rem;
+  display: flex;
+  justify-content: flex-start;
+  padding: 10px;
+}
+
+.project-links a {
+  text-decoration: none;
+  color: #3C3C3C;
+  border: 2px solid #FF340A;
+  padding: 4px 17px;
+  margin-left: 5px;
+}
+
+.project-links a:hover {
+  color: #f3f3f3;
+  background-color: #ff340adb;
+}
+/* 
+.project-links a.git-btn:hover {
+  box-shadow: -6px 1em 2em 1px #bcbbba;
+}
+
+.project-links a.link-btn:hover {
+  box-shadow: 6px 1em 2em 1px #bcbbba;
+}
+
+.project-links a.link-btn {
+  -ms-transform: skewY(5deg);
+  transform: skewY(355deg);
+}
+
+.project-links a.git-btn {
+  -ms-transform: skewY(5deg);
+  transform: skewY(5deg);
+} */
+
+
+
 .project1,
 .project2,
 .project3,
@@ -337,7 +395,7 @@ i {
 }
 
 .image {
-  width: 40rem;
+  width: 30rem;
 }
 
 .technologies {

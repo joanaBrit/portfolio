@@ -1,4 +1,4 @@
-// ? Navbar scroll
+//? Navbar scroll
 
 // window.onscroll = function() {scrollNav()}
 
@@ -6,29 +6,25 @@ const nav = document.getElementById("main-nav")
 const sticky = nav.offsetTop
 
 function scrollNav() {
-  if (window.scrollY >= sticky ) {
+  if (window.scrollY >= sticky) {
     nav.classList.add("sticky")
   } else {
     nav.classList.remove("sticky")
   }
 }
 
+
+// //? Button redirect
+
+// const linkBtn = document.getElementById("link-button")
+// const gitBtn = document.getElementById("git-btn")
+
+// linkBtn.addEventListener("click", function () {
+//   window.location.href = ""
+// })
+
+
 //? Title typing effect
-
-// consoleText(['a Fashion Designer'],
-// )
-
-// const i = 0
-// const text = 'I\'m a Full-Stack Web Developer and a Fashion Designer'
-// const speed = 50
-
-// function typingtext() {
-//   if (i < text.length) {
-//     document.getElementById("text-type").innerHTML += text.charAt(i)
-//     i++
-//     setTimeout(typingtext, speed)
-//   }
-// }
 
 const text = 'Hi! I\'m a Full-Stack Web Developer and a Fashion Designer.'
 
@@ -38,7 +34,7 @@ let intervalID
 
 function writeText() {
   type.innerHTML = text.slice(0, index)
-  
+
   if (index > text.length) {
     clearInterval(intervalID)
   } else {
