@@ -250,7 +250,7 @@ p {
   width: 700px;
   margin: 0 auto;
   margin-top: 40px;
-  padding: 100px 0;
+  padding-top: 100px;
 }
 
 i {
@@ -354,7 +354,7 @@ i {
   flex-direction: column;
   gap: 1rem;
 }
-
+/* ! I want gap 0 and then git hub button move rigth 5rem when scroll down */
 .project-links {
   gap: 3rem;
   display: flex;
@@ -401,6 +401,8 @@ i {
 
 .technologies {
   display: flex;
+  justify-content: flex-start;
+  gap: 5px;
 }
 
 .angle3 {
@@ -439,12 +441,12 @@ i {
 
 .experience-container img {
   width: 120px;
-    height: 120px;
-    padding: 5px;
-    margin: 15px;
-    background-size: cover;
-    /* border: 1px solid rgba(0, 0, 0, .125); */
-    /* border-radius: 5%; */
+  height: 120px;
+  padding: 5px;
+  margin: 15px;
+  background-size: cover;
+  /* border: 1px solid rgba(0, 0, 0, .125); */
+  /* border-radius: 5%; */
 }
 
 .ga,
@@ -516,11 +518,11 @@ h3 span {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 10px;
+  gap: 20px;
 }
 
 .interest-icons p {
-  padding: 0 5px;
+  padding: 0 10px;
 }
 
 .angle5 {
