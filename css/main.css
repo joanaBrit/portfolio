@@ -103,6 +103,11 @@ a {
   position: absolute;
 }
 
+.sub-angle,
+.sub-reversedangle {
+  margin-bottom: 6rem;
+}
+
 .angle h2 {
   display: flex;
   justify-content: center;
@@ -111,7 +116,6 @@ a {
 
 
 /*? Title */
-/* !VH */
 
 .title {
   background-color: #FF340A;
@@ -318,15 +322,12 @@ i {
 
 /*? Projects */
 
-.sub-angle,
-.sub-reversedangle {
-  margin-bottom: 6rem;
-}
-
 #projects {
   margin: 0;
   padding: 100px 0;
 }
+
+
 
 .projects-container {
   display: flex;
@@ -339,6 +340,15 @@ i {
   flex-direction: column;
 }
 
+.project1,
+.project2,
+.project3,
+.project4 {
+  display: flex;
+  align-items: center;
+  gap: 6rem;
+}
+
 .text-wrap {
   display: flex;
   flex-direction: column;
@@ -346,7 +356,7 @@ i {
 }
 
 .project-links {
-  gap: 0.5rem;
+  gap: 3rem;
   display: flex;
   justify-content: flex-start;
   padding: 10px;
@@ -355,15 +365,17 @@ i {
 .project-links a {
   text-decoration: none;
   color: #3C3C3C;
-  border: 2px solid #FF340A;
+  border: 1px solid #FF340A;
+  border-radius: 4px;
   padding: 4px 17px;
-  margin-left: 5px;
+  /* margin-left: 5px; */
 }
 
 .project-links a:hover {
   color: #f3f3f3;
   background-color: #ff340adb;
 }
+
 /* 
 .project-links a.git-btn:hover {
   box-shadow: -6px 1em 2em 1px #bcbbba;
@@ -382,17 +394,6 @@ i {
   -ms-transform: skewY(5deg);
   transform: skewY(5deg);
 } */
-
-
-
-.project1,
-.project2,
-.project3,
-.project4 {
-  display: flex;
-  align-items: center;
-  gap: 20px;
-}
 
 .image {
   width: 30rem;
@@ -432,16 +433,18 @@ i {
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
-  gap: 50px;
   margin: 0 200px;
+  gap: 6rem;
 }
 
 .experience-container img {
-  width: 100px;
-  height: 100px;
-  padding: 5px;
-  margin: 15px;
-  background-size: cover;
+  width: 120px;
+    height: 120px;
+    padding: 5px;
+    margin: 15px;
+    background-size: cover;
+    /* border: 1px solid rgba(0, 0, 0, .125); */
+    /* border-radius: 5%; */
 }
 
 .ga,
@@ -453,7 +456,11 @@ i {
 }
 
 .exp-text {
-  margin-left: 30px;
+  margin-left: 5rem;
+}
+
+.exp-text-reverse {
+  margin-right: 5rem;
 }
 
 h3 span {
