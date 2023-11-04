@@ -2,12 +2,18 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  --h1-font-size: calc(1.375rem + 1.5vw);
 }
 
 body {
   color: #3C3C3C;
   background-color: #F2F2F2 !important;
   font-family: 'Roboto Mono', monospace !important;
+  /* min-height: 100vh; */
+}
+
+h1 {
+  font-size: var(--h1-font-size)
 }
 
 h2 {
@@ -88,7 +94,6 @@ a {
   height: 100%;
   background-color: #FF340A;
   clip-path: polygon(100% 30%, 100% 100%, 0 100%);
-  border: none;
 }
 
 
@@ -130,7 +135,13 @@ a {
   justify-content: space-between;
   align-items: center;
   color: #f3f3f3;
-  gap: 20px;
+  gap: 25px;
+}
+
+#text-type {
+  font-size: calc(var(--h1-font-size) * 0.85);
+  max-width: 80vw;
+  height: 7rem;
 }
 
 p {
@@ -174,7 +185,7 @@ p {
 .angle2 {
   height: 180px;
   width: 100%;
-  background-color: #FF340A;
+  background-color: #F2F2F2;
 }
 
 .angle2:after {
@@ -184,8 +195,8 @@ p {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: #F2F2F2;
-  clip-path: polygon(100% 0, 100% 100%, 0 100%);
+  background-color: #FF340A;
+  clip-path: polygon(0 0, 0 100%, 100% 0);
 }
 
 
@@ -198,6 +209,7 @@ p {
 
 .about-me {
   display: flex;
+  flex-direction: column;
   gap: 50px;
   max-width: 1280px;
   width: 100%;
@@ -210,21 +222,21 @@ p {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 10px;
+  gap: 20px;
 }
 
 .img-wrap a {
   text-decoration: none;
   color: #3C3C3C;
   font-weight: 600;
-  font-size: 25px;
+  font-size: 20px;
 }
 
 .img-wrap a:hover {
   text-decoration: none;
   color: #FF340A;
   font-weight: 500;
-  font-size: 25px;
+  transform: scale(1.2);
 }
 
 .img-wrap h2 {
@@ -240,17 +252,14 @@ p {
 }
 
 .about-text {
-  width: 70%;
   padding: 5%;
 }
 
 /* Skills */
 
 #skills {
-  width: 700px;
   margin: 0 auto;
   margin-top: 40px;
-  padding-top: 100px;
 }
 
 i {
@@ -258,25 +267,27 @@ i {
 }
 
 .icons-container {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
+  width: max-content;
+  margin: auto;
+  display: grid;
   justify-content: center;
-  list-style: none;
+  grid-template-columns: 1fr 1fr 1fr;
 }
 
 .icons-container div.icon {
+
+  margin: 11px 1px 1px 3px;
+  padding: 10px;
+  width: 90px;
+  height: 90px;
+
   justify-content: center;
   border: 1px solid rgba(0, 0, 0, .125);
   border-radius: 5%;
-  margin: 20px 5px 5px 5px;
-  width: 125px;
-  height: 125px;
   align-items: center;
   font-size: 13px;
   display: grid;
   justify-items: center;
-  padding: 1.5rem;
   gap: 10px;
 }
 
@@ -285,40 +296,6 @@ i {
   font-weight: normal;
 }
 
-/* .icons-container .icon i{
-  display: block;
-    height: 100%;
-    color: var(--primaryColor);
-    -webkit-transition: background 0.2s;
-    -moz-transition: background 0.2s;
-    transition: background 0.2s;
-    cursor: pointer;
-} */
-/* .icons-container .icon:before{
-    font-size: 6em;
-    font-style: normal;
-    font-weight: normal;
-    font-variant: normal;
-    text-transform: none;
-    line-height: 1;
-    -webkit-font-smoothing: antialiased;
-} */
-
-/* .icon h3 {
-  margin: 20px 0 10px;
-  padding: 20px 0 0;
-  font-size: 1em;
-  position: relative;
-  -webkit-transition: -webkit-transform 0.2s;
-  -moz-transition: -moz-transform 0.2s;
-  transition: transform 0.2s;
-} */
-
-/* div .i {
-  font-size: 60px;
-  color: #F2F2F2;
-} */
-
 
 /*? Projects */
 
@@ -326,8 +303,6 @@ i {
   margin: 0;
   padding: 100px 0;
 }
-
-
 
 .projects-container {
   display: flex;
@@ -349,35 +324,41 @@ i {
   gap: 6rem;
 }
 
+.project1,
+.project3 {
+  flex-direction: column;
+}
+
+.project2,
+.project4 {
+  flex-direction: column-reverse;
+}
+
 .text-wrap {
   display: flex;
   flex-direction: column;
   gap: 1rem;
 }
 
-/* ! I want gap 0 and then git hub button move rigth 5rem when scroll down */
 .project-links {
   gap: 4px;
   display: flex;
-  justify-content: flex-start;
   padding: 10px;
   position: relative;
   overflow-x: hidden;
+  align-items: flex-start;
 }
 
 .project-links a.scroll-side {
-  transform: translateX(0); 
-  transition: transform 275ms ease;
+  transform: translateX(50px);
+  opacity: 0;
+  transition: all 0.5s;
 }
 
-
-/* .project-links a.scroll-side:before {
-  display: inline-block;
-  content: attr(data-content);
-  color: #3C3C3C;
-  transform: translateY(0%);
-  transition: transform 275ms ease;
-}  */
+.project-links a.scroll-side.show-up {
+  transform: translateX(0px);
+  opacity: 1;
+}
 
 .project-links a {
   text-decoration: none;
@@ -385,7 +366,6 @@ i {
   border: 1px solid #FF340A;
   border-radius: 4px;
   padding: 4px 17px;
-  /* margin-left: 5px; */
 }
 
 .project-links a:hover {
@@ -393,27 +373,9 @@ i {
   background-color: #ff340adb;
 }
 
-/* 
-.project-links a.git-btn:hover {
-  box-shadow: -6px 1em 2em 1px #bcbbba;
-}
-
-.project-links a.link-btn:hover {
-  box-shadow: 6px 1em 2em 1px #bcbbba;
-}
-
-.project-links a.link-btn {
-  -ms-transform: skewY(5deg);
-  transform: skewY(355deg);
-}
-
-.project-links a.git-btn {
-  -ms-transform: skewY(5deg);
-  transform: skewY(5deg);
-} */
-
 .image {
   width: 30rem;
+  max-width: 80vw;
 }
 
 .technologies {
@@ -452,8 +414,8 @@ i {
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
-  margin: 0 200px;
-  gap: 6rem;
+  margin: 0 10vw;
+
 }
 
 .experience-container img {
@@ -462,25 +424,24 @@ i {
   padding: 5px;
   margin: 15px;
   background-size: cover;
-  /* border: 1px solid rgba(0, 0, 0, .125); */
-  /* border-radius: 5%; */
 }
 
 .ga,
 .fashion-assistant,
 .visual-merchandiser {
   display: flex;
-  flex-direction: row;
   align-items: center;
 }
 
-.exp-text {
-  margin-left: 5rem;
+.ga,
+.visual-merchandiser {
+  flex-direction: column;
 }
 
-.exp-text-reverse {
-  margin-right: 5rem;
+.fashion-assistant {
+  flex-direction: column-reverse;
 }
+
 
 h3 span {
   font-size: 22px;
@@ -509,7 +470,7 @@ h3 span {
 
 #interests {
   margin: 0;
-  padding: 100px 0;
+  padding: 60px 0;
 }
 
 .interest-icon-container {
@@ -519,9 +480,10 @@ h3 span {
 }
 
 .interest-icons {
-  display: flex;
+  display: grid;
   gap: 30px;
-  margin: 68px;
+  margin: 0 10vw;
+  padding: 32px 0;
 }
 
 .interest-icons img {
@@ -536,6 +498,7 @@ h3 span {
   flex-direction: column;
   align-items: center;
   gap: 20px;
+  padding: 0 10px;
 }
 
 .interest-icons p {
@@ -562,23 +525,15 @@ h3 span {
 
 
 /*? Contact */
+#contact {
+  margin: 0;
+  padding-bottom: 45px;
+}
 
 #contact h2 {
   color: #FF340A;
   display: flex;
   justify-content: center;
-  padding: 20px;
-}
-
-.social-links {
-  background-color: #E6E5E5;
-  text-decoration: none;
-  padding: 10px;
-}
-
-.social-links a {
-  color: #FF340A;
-  padding: 3px;
 }
 
 .email {
@@ -586,16 +541,146 @@ h3 span {
   flex-direction: row;
   justify-content: center;
   align-items: flex-end;
-  padding: 10px;
   gap: 1rem;
 }
 
-/* 
-.social-links .bi {
-  border-radius: 50%;
-  background-color: #E6E5E5;
-} */
 
-.social-links a:hover {
+/*? Footer */
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+
+  height: 2.5rem;
+  border-radius: 5px;
+  margin: 2rem;
+  padding: 1rem;
+  background-color: #e6e5e5ad;
+  box-sizing: border-box;
+  backdrop-filter: blur(10px);
+  pointer-events: all;
+}
+
+footer a {
   color: #3C3C3C;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: #FF340A;
+  padding-bottom: 4px;
+}
+
+footer i {
+  display: flex;
+  font-size: 25px;
+}
+
+.full-page-overlay {
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+@media (min-width: 800px) {
+  .title-container {
+    margin-top: 20px;
+  }
+
+  #about {
+    padding: 58px 0;
+  }
+
+  .about-text {
+    width: 70%;
+  }
+
+  .about-me {
+    flex-direction: row;
+    gap: 30px;
+    padding: 0 10vw;
+  }
+
+  .about-text {
+    width: 80%;
+    padding: 2%;
+    font-size: 15px;
+  }
+
+  .img-wrap img {
+    width: 160px;
+  }
+
+  #skills {
+    margin: 23px auto 0;
+    padding-top: 100px;
+  }
+
+  .icons-container {
+    grid-template-columns: repeat(5, 1fr);
+  }
+
+  .icons-container div.icon {
+    margin: 20px 5px 5px 5px;
+    width: 125px;
+    height: 125px;
+    padding: 1.5rem;
+
+  }
+
+  #projects {
+    margin: 0;
+    padding: 62px 0;
+  }
+
+  .projects-container {
+    gap: 3rem;
+    width: 400px;
+    padding: 0;
+    flex-wrap: wrap;
+    align-content: center;
+  }
+
+  .project1,
+  .project2,
+  .project3,
+  .project4 {
+    flex-direction: row;
+    gap: 7vw;
+  }
+
+  .image {
+    width: 23rem;
+  }
+
+  .experience-container {
+    gap: 6rem;
+  }
+
+  .exp-text {
+    margin-left: 5rem;
+  }
+
+  .exp-text-reverse {
+    margin-right: 5rem;
+  }
+
+  .ga,
+  .fashion-assistant,
+  .visual-merchandiser {
+    flex-direction: row;
+  }
+
+  .interest-icons {
+    display: flex;
+  }
+
 }
