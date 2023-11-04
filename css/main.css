@@ -50,7 +50,7 @@ h2 {
   font-size: 18px;
   color: #FF340A;
   text-decoration: none;
-  padding: 15px;
+  margin: 0 15px;
 }
 
 a {
@@ -637,13 +637,12 @@ footer i {
   }
 
   #projects {
-    margin: 0;
+    margin: 0 10vw;
     padding: 62px 0;
   }
 
   .projects-container {
     gap: 3rem;
-    width: 400px;
     padding: 0;
     flex-wrap: wrap;
     align-content: center;
