@@ -14,7 +14,8 @@ function scrollNav() {
 
 // //? scroll "github" horizontally
 
-const SCROLL_BEFORE_AMOUNT = 550
+const SCROLL_BEFORE_AMOUNT = 450
+const SCROLL_AFTER_AMOUNT = 450
 
 window.addEventListener('scroll', () => {
 
@@ -33,7 +34,7 @@ window.addEventListener('scroll', () => {
     const button = document.querySelector(`.${project} .scroll-side`)
 
     if (scrollY > sectionPositions[project] - SCROLL_BEFORE_AMOUNT) {
-      if (scrollY > sectionPositions[project] + SCROLL_BEFORE_AMOUNT) {
+      if (scrollY > sectionPositions[project] + SCROLL_AFTER_AMOUNT) {
         button.classList.remove('show-up')
         button.classList.add('show-down')
       } else {
