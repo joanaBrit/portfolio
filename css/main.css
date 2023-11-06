@@ -640,6 +640,10 @@ footer i {
     padding: 62px 0;
   }
 
+  #projects:not(.sub-angle) {
+    margin: 0 10vw;
+  }
+
   .projects-container {
     gap: 3rem;
     padding: 0;
