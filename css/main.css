@@ -381,6 +381,13 @@ i {
 .technologies {
   display: flex;
   justify-content: flex-start;
+  gap: 13px;
+}
+
+.icons {
+  font-size: 12px;
+  display: flex;
+  flex-direction: column;
   gap: 5px;
 }
 
@@ -620,7 +627,7 @@ footer i {
 
   #skills {
     margin: 23px auto 0;
-    padding-top: 100px;
+    padding: 100px 0;
   }
 
   .icons-container {
