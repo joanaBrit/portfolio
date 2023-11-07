@@ -257,9 +257,37 @@ p {
 
 /* Skills */
 
+.other-skills {
+  margin: 0 auto;
+  padding: 20px 8%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
+  gap: 1.5rem;
+}
+
+.bar {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  align-content: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 3rem;
+}
+
+h4 {
+  margin-bottom: 2rem !important;
+}
+
+.progress-bar.custom {
+  background-color: #3C3C3C;
+}
+
 #skills {
   margin: 0 auto;
-  margin-top: 40px;
+  margin-top: 20px;
 }
 
 i {
@@ -275,12 +303,10 @@ i {
 }
 
 .icons-container div.icon {
-
   margin: 11px 1px 1px 3px;
   padding: 10px;
   width: 90px;
   height: 90px;
-
   justify-content: center;
   border: 1px solid rgba(0, 0, 0, .125);
   border-radius: 5%;
@@ -449,7 +475,6 @@ i {
   flex-direction: column-reverse;
 }
 
-
 h3 span {
   font-size: 22px;
 }
@@ -597,6 +622,7 @@ footer i {
 }
 
 @media (min-width: 800px) {
+
   .title-container {
     margin-top: 20px;
   }
@@ -625,9 +651,17 @@ footer i {
     width: 160px;
   }
 
+  .other-skills {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 8rem;
+    margin-top: 1rem;
+  }
+
   #skills {
     margin: 23px auto 0;
-    padding: 100px 0;
+    padding-bottom: 90px;
   }
 
   .icons-container {
