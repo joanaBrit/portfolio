@@ -258,13 +258,13 @@ p {
 /* Skills */
 
 .other-skills {
-  margin: 0 auto;
   padding: 20px 8%;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   align-content: center;
   gap: 1.5rem;
+  margin-top: 3rem;
 }
 
 .bar {
@@ -415,6 +415,7 @@ i {
   display: flex;
   flex-direction: column;
   gap: 5px;
+  align-items: center;
 }
 
 .angle3 {
@@ -656,12 +657,11 @@ footer i {
     flex-direction: row;
     justify-content: center;
     gap: 8rem;
-    margin-top: 1rem;
+    padding-bottom: 90px;
   }
 
   #skills {
-    margin: 23px auto 0;
-    padding-bottom: 90px;
+    margin: 3rem auto;
   }
 
   .icons-container {
