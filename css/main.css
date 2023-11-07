@@ -140,7 +140,7 @@ a {
 
 #text-type {
   font-size: calc(var(--h1-font-size) * 0.85);
-  max-width: 80vw;
+  max-width: 60vw;
   height: 7rem;
 }
 
