@@ -51,7 +51,7 @@ window.addEventListener('scroll', () => {
 
 //? Title typing effect
 
-const text = 'Hi! I\'m a Full-Stack Developer and a Fashion Designer.'
+const text = 'Hi! I\'m a Junior Software Engineer and a Fashion Designer.'
 
 let index = 0
 let type = document.getElementById('text-type')
@@ -116,7 +116,7 @@ intervalID = setInterval(writeText, 100)
 //     scrollSide.style.transform = `translateX(${finalTranslateX}px)`
 
 //     // if (isMoving[i]) {
-//     //   scrollSide.style.backgroundColor = '#ff340adb'
+//     //   scrollSide.style.backgroundColor = 'var(--angle-color)db'
 //     //   scrollSide.style.color = '#f3f3f3'
 //     // } else {
 //     //   scrollSide.style.backgroundColor = 'transparent'
