@@ -51,7 +51,7 @@ window.addEventListener('scroll', () => {
 
 //? Title typing effect
 
-const text = 'Hi! I\'m a Junior Software Engineer and a Fashion Designer.'
+const text = 'Hi! I\'m a Junior Software Engineer and experience in Fashion Design.'
 
 let index = 0
 let type = document.getElementById('text-type')
