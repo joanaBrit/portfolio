@@ -28,7 +28,16 @@ h2 {
 
 /*? Navbar */
 
-#main-nav {
+.nav-name {
+  font-size: 1rem;
+  color: var(--angle-color);
+  text-decoration: none;
+  pointer-events: none;
+  /* font-weight: 500; */
+  /* padding-left: 15px; */
+}
+
+/* .navbar {
   overflow: hidden;
   background-color: #F2F2F2;
   display: flex;
@@ -40,6 +49,11 @@ h2 {
   height: 3.5rem;
 }
 
+.navbar-toggler {
+  border: none;
+}
+
+
 .sticky {
   position: fixed;
   top: 0;
@@ -47,10 +61,10 @@ h2 {
   box-shadow: 3px 0em 1em 0px;
 }
 
-#main-nav a {
+.navbar a {
   float: left;
   display: block;
-  font-size: 18px;
+  font-size: 1rem;
   color: var(--angle-color);
   text-decoration: none;
   margin: 0 15px;
@@ -62,12 +76,12 @@ a {
 }
 
 .nav-name {
-  font-size: 20px;
+  font-size: 1.5rem;
   color: var(--angle-color);
   text-decoration: none;
   pointer-events: none;
-  font-weight: 500;
-  padding-left: 15px;
+  /* font-weight: 500; */
+/* padding-left: 15px;
 }
 
 .nav-pages {
@@ -78,8 +92,8 @@ a {
   background-color: #3C3C3C;
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
-}
-
+} */
+*/
 /* Angle */
 
 .angle1 {
@@ -139,6 +153,7 @@ a {
   align-items: center;
   color: #f3f3f3;
   gap: 25px;
+  padding-top: 15vh;
 }
 
 #text-type {
@@ -560,7 +575,6 @@ h3 span {
 /*? Contact */
 #contact {
   margin: 0;
-  padding-bottom: 45px;
 }
 
 #contact h2 {
@@ -622,10 +636,78 @@ footer i {
   justify-content: center;
 }
 
-@media (min-width: 800px) {
+nav.navbar {
+  flex-direction: column;
+  align-items: unset;
+  padding: 0.5rem 2rem;
+}
 
-  .title-container {
-    margin-top: 20px;
+.navbar-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+@media (min-width: 800px) {
+  nav>.nav-collapse {
+    display: unset !important
+  }
+
+  nav>.navbar-top {
+    width: auto;
+  }
+
+  nav.navbar {
+    overflow: hidden;
+    background-color: #F2F2F2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    z-index: 1;
+    width: 100vw;
+    height: 3.5rem;
+    flex-direction: row;
+    top: 0;
+  }
+
+  .navbar-toggler {
+    border: none;
+  }
+
+
+  .sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    box-shadow: 3px 0em 1em 0px;
+  }
+
+  .navbar a {
+    float: left;
+    display: block;
+    font-size: 1rem;
+    color: var(--angle-color);
+    text-decoration: none;
+    margin: 0 15px;
+  }
+
+  a {
+    list-style-type: none;
+    margin: 0;
+  }
+
+  
+
+  .nav-pages {
+    padding-right: 15px;
+  }
+
+  .nav-pages a:hover {
+    background-color: #3C3C3C;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
   }
 
   .sub-reversedangle {
