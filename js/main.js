@@ -1,6 +1,8 @@
-//? Navbar scroll
+//? Navbar 
 
-const nav = document.getElementById("main-nav")
+//* Scroll
+
+const nav = document.getElementById("navbar")
 const sticky = nav.offsetTop
 
 function scrollNav() {
@@ -10,6 +12,7 @@ function scrollNav() {
     nav.classList.remove("sticky")
   }
 }
+
 
 
 // //? scroll "github" horizontally
