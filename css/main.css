@@ -162,8 +162,9 @@ a {
 
 #text-type {
   font-size: calc(var(--h1-font-size) * 0.85);
-  max-width: 60vw;
+  max-width: 70vw;
   height: 7rem;
+  text-align: center;
 }
 
 p {
@@ -761,6 +762,12 @@ nav.navbar {
     padding: 2%;
   }
 
+  .about-text h2 {
+    font-size: 2rem;
+        color: var(--angle-color);
+        text-align: center;
+        padding-bottom: 3rem;
+  }
   .img-wrap img {
     width: 160px;
   }
