@@ -150,14 +150,13 @@ a {
 }
 
 .title-container {
-  font-size: 200%;
   padding: 20px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
   color: #f3f3f3;
-  gap: 25px;
+  gap: 2.5rem;
   padding-top: 15vh;
 }
 
@@ -217,9 +216,9 @@ p {
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
+  height: 60%;
   background-color: var(--angle-color);
-  clip-path: polygon(0 0, 0 100%, 100% 0);
+  clip-path: polygon(0 0, 100% 100%, 100% 0);
 }
 
 
@@ -733,6 +732,14 @@ nav.navbar {
   .sub-angle {
     margin-right: 70px;
     margin-left: 0px;
+  }
+
+  .title-container{
+    gap: 4rem;
+  }
+  
+  #text-type {
+    text-align: center;
   }
 
   #about {

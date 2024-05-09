@@ -14,7 +14,6 @@ function scrollNav() {
 }
 
 
-
 // //? scroll "github" horizontally
 
 const SCROLL_BEFORE_AMOUNT = 450
