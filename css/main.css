@@ -42,6 +42,7 @@ h2 {
 a.nav-link {
   color: var(--body-color);
 }
+
 /* .navbar {
   overflow: hidden;
   background-color: #F2F2F2;
@@ -227,7 +228,7 @@ p {
 
 #about {
   margin: 0;
-  padding: 100px 0;
+  padding: 50px 0;
 }
 
 .about-me {
@@ -239,6 +240,19 @@ p {
   margin: 0 auto;
   padding: 0 8%;
   align-items: center;
+  padding-bottom: 3rem;
+}
+
+.about-title {
+  gap: 4rem;
+  display: flex;
+  flex-direction: column;
+
+}
+
+.about-title h2 {
+  color: var(--angle-color);
+  text-align: center;
 }
 
 .img-wrap {
@@ -276,7 +290,6 @@ p {
 
 .about-text {
   padding: 5%;
-  margin-bottom: 3rem;
 }
 
 /* Skills */
@@ -321,11 +334,11 @@ i {
 
 .icons-container {
   width: max-content;
-  margin: auto;
+  /* margin: auto; */
   display: grid;
   justify-content: center;
   grid-template-columns: 1fr 1fr 1fr;
-  margin-bottom: 3rem;
+  margin: 3rem auto;
 }
 
 .icons-container div.icon {
@@ -353,7 +366,7 @@ i {
 
 #projects {
   margin: 0;
-  /* padding: 100px 0; */
+  padding: 50px 0;
 }
 
 .projects-container {
@@ -473,7 +486,7 @@ span {
 
 #experience {
   margin: 0;
-  padding: 100px 0;
+  padding: 50px 0;
 }
 
 .experience-container {
@@ -485,9 +498,9 @@ span {
 }
 
 .experience-container img {
-  width: 120px;
-  height: 120px;
-  padding: 5px;
+  width: 140px;
+  height: 140px;
+  /* padding: 5px; */
   margin: 15px;
   background-size: cover;
 }
@@ -533,7 +546,7 @@ h3 span {
 
 #interests {
   margin: 0;
-  padding: 60px 0;
+  padding: 50px 0;
 }
 
 .interest-icon-container {
@@ -589,8 +602,10 @@ h3 span {
 
 /*? Contact */
 #contact {
-  margin: 0;
+  margin: 3rem 1rem;
+  padding: 0 10px;
 }
+
 
 #contact h2 {
   color: var(--angle-color);
@@ -713,8 +728,8 @@ nav.navbar {
     margin: 0;
   }
 
-  
-/* 
+
+  /* 
   .nav-pages {
     padding-right: 15px;
   } */
@@ -735,26 +750,25 @@ nav.navbar {
     margin-left: 0px;
   }
 
-  .title-container{
+  .title-container {
     gap: 4rem;
   }
-  
+
   #text-type {
     text-align: center;
   }
 
-  #about {
+  /* #about {
     padding: 58px 0;
-  }
+  } */
 
-  .about-text {
-    width: 70%;
-  }
+ 
 
   .about-me {
     flex-direction: row;
-    gap: 30px;
-    padding: 0 10vw;
+    gap: 5rem;
+    padding: 0 5vw;
+    margin-bottom: 3rem;
   }
 
   .about-text {
@@ -762,14 +776,19 @@ nav.navbar {
     padding: 2%;
   }
 
-  .about-text h2 {
+  /* .about-text h2 {
     font-size: 2rem;
         color: var(--angle-color);
         text-align: center;
         padding-bottom: 3rem;
+  } */
+
+  .img-wrap {
+    gap: 3rem;
   }
+
   .img-wrap img {
-    width: 160px;
+    width: 220px;
   }
 
   .other-skills {
@@ -777,7 +796,7 @@ nav.navbar {
     flex-direction: row;
     justify-content: center;
     gap: 8rem;
-    /* padding-bottom: 90px; */
+    padding-bottom: 3rem;
   }
 
   #skills {
@@ -793,7 +812,6 @@ nav.navbar {
     width: 125px;
     height: 125px;
     padding: 1.5rem;
-
   }
 
   #projects {
@@ -824,9 +842,9 @@ nav.navbar {
     width: 23rem;
   }
 
-  .experience-container {
-    gap: 6rem;
-  }
+  /* .experience-container {
+    gap: 3rem;
+  } */
 
   .exp-text {
     margin-left: 5rem;
