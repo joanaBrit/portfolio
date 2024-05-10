@@ -1,3 +1,7 @@
+:root {
+  --bs-navbar-toggler-focus-width: 0
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -175,6 +179,7 @@ p {
 .arrow {
   display: flex;
   justify-content: center;
+  cursor: pointer;
 }
 
 .hero-arrow {
@@ -667,9 +672,10 @@ footer i {
 }
 
 nav.navbar {
-  flex-direction: column;
-  align-items: unset;
+  /* flex-direction: column;
+  align-items: unset; */
   padding: 0.5rem 2rem;
+  --bs-navbar-toggler-focus-width: 0
 }
 
 .navbar-top {
@@ -762,7 +768,7 @@ nav.navbar {
     padding: 58px 0;
   } */
 
- 
+
 
   .about-me {
     flex-direction: row;
@@ -783,7 +789,7 @@ nav.navbar {
         padding-bottom: 3rem;
   } */
 
-  
+
 
   .img-wrap img {
     width: 220px;
@@ -864,5 +870,5 @@ nav.navbar {
 
   .interest-icons p {
     padding: 0;
-}
+  }
 }
