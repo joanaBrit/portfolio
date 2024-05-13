@@ -310,7 +310,7 @@ p {
   padding-bottom: 5rem;
 }
 
-.bar {
+/* .language{
   display: flex;
   flex-direction: row;
   align-items: baseline;
@@ -318,15 +318,24 @@ p {
   flex-wrap: wrap;
   justify-content: space-between;
   gap: 3rem;
+} */
+.languages-container{
+display: flex;
+gap: 2rem;
+}
+
+.language, .capability {
+  display: flex;
+  flex-direction: column;
 }
 
 h4 {
   margin-bottom: 2rem !important;
 }
 
-.progress-bar.custom {
+/* .progress-bar.custom {
   background-color: var(--light-grey);
-}
+} */
 
 #skills {
   margin: 0 auto;
@@ -802,6 +811,10 @@ nav.navbar {
     gap: 8rem;
     padding-bottom: 3rem;
   }
+
+  .languages-container{
+    gap: 3rem;
+    }
 
   #skills {
     margin: 3rem auto;
