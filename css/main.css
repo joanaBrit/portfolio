@@ -10,6 +10,7 @@
   --angle-color: #d12300;
   --body-color: #212529;
   --light-grey: #3C3C3C;
+  --white-text-color: #f3f3f3;
 }
 
 body {
@@ -28,7 +29,7 @@ h2 {
   text-transform: uppercase;
   margin: 0 0 10px;
   font-size: 0.75rem;
-  color: #f3f3f3;
+  color: var(--white-text-color);
   letter-spacing: 0.8px;
 }
 
@@ -160,7 +161,7 @@ a {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  color: #f3f3f3;
+  color: var(--white-text-color);
   gap: 2.5rem;
   padding-top: 15vh;
 }
@@ -183,7 +184,7 @@ p {
 }
 
 .hero-arrow {
-  color: #f3f3f3;
+  color: var(--white-text-color);
   align-self: center;
   font-size: 35px;
   margin-top: 75px;
@@ -451,7 +452,7 @@ i {
 }
 
 .project-links a:hover {
-  color: #f3f3f3;
+  color: var(--white-text-color);
   background-color: var(--angle-color);
 }
 
@@ -491,7 +492,7 @@ span {
   background-color: var(--angle-color);
   position: relative;
   height: 180px;
-  color: #f3f3f3;
+  color: var(--white-text-color);
   -ms-transform: skewY(5deg);
   transform: skewY(5deg);
 }
@@ -621,7 +622,6 @@ h3 span {
   padding: 0 10px;
 }
 
-
 #contact h2 {
   color: var(--angle-color);
   display: flex;
@@ -634,6 +634,38 @@ h3 span {
   justify-content: center;
   align-items: flex-end;
   gap: 1rem;
+}
+
+.cv-download {
+  display: flex;
+  justify-content: center;
+}
+
+.contact-container {
+  display: flex;
+  gap: 1.5rem;
+  flex-direction: column;
+  margin-top: 2rem;
+}
+
+.cv-download i {
+  height: 20px;
+}
+
+.cv-download a {
+  text-decoration: none;
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  color: var(--body-color);
+  border: 1.5px solid var(--angle-color);
+  border-radius: 4px;
+  padding: 0.5rem;
+}
+
+.cv-download a:hover {
+  color: var(--white-text-color);
+  background-color: var(--angle-color);
 }
 
 
