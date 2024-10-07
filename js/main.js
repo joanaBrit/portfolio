@@ -16,20 +16,21 @@ function scrollNav() {
 
 // //? scroll "github" horizontally
 
-const SCROLL_BEFORE_AMOUNT = 440
-const SCROLL_AFTER_AMOUNT = 450
+const SCROLL_BEFORE_AMOUNT = 580
+const SCROLL_AFTER_AMOUNT = 540
 
 window.addEventListener('scroll', () => {
 
   const scrollY = window.scrollY
   const sectionPositions = {
+    project5: document.querySelector('.project4').offsetTop,
     project4: document.querySelector('.project4').offsetTop,
     project3: document.querySelector('.project3').offsetTop,
     project2: document.querySelector('.project2').offsetTop,
     project1: document.querySelector('.project1').offsetTop
   }
 
-  const projectClasses = ['project4', 'project3', 'project2', 'project1']
+  const projectClasses = ['project5', 'project4', 'project3', 'project2', 'project1']
 
   projectClasses.forEach(project => {
 

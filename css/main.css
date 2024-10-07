@@ -399,14 +399,16 @@ i {
 .project1,
 .project2,
 .project3,
-.project4 {
+.project4,
+.project5 {
   display: flex;
   align-items: center;
   gap: 3.5rem;
 }
 
 .project1,
-.project3 {
+.project3,
+.project5 {
   flex-direction: column;
 }
 
@@ -883,7 +885,8 @@ nav.navbar {
   .project1,
   .project2,
   .project3,
-  .project4 {
+  .project4,
+  .project5 {
     flex-direction: row;
     gap: 7vw;
   }
