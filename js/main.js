@@ -16,39 +16,39 @@ function scrollNav() {
 
 // //? scroll "github" horizontally
 
-const SCROLL_BEFORE_AMOUNT = 580
-const SCROLL_AFTER_AMOUNT = 540
+// const SCROLL_BEFORE_AMOUNT = 580
+// const SCROLL_AFTER_AMOUNT = 540
 
-window.addEventListener('scroll', () => {
+// window.addEventListener('scroll', () => {
 
-  const scrollY = window.scrollY
-  const sectionPositions = {
-    project5: document.querySelector('.project4').offsetTop,
-    project4: document.querySelector('.project4').offsetTop,
-    project3: document.querySelector('.project3').offsetTop,
-    project2: document.querySelector('.project2').offsetTop,
-    project1: document.querySelector('.project1').offsetTop
-  }
+//   const scrollY = window.scrollY
+//   const sectionPositions = {
+//     project5: document.querySelector('.project4').offsetTop,
+//     project4: document.querySelector('.project4').offsetTop,
+//     project3: document.querySelector('.project3').offsetTop,
+//     project2: document.querySelector('.project2').offsetTop,
+//     project1: document.querySelector('.project1').offsetTop
+//   }
 
-  const projectClasses = ['project5', 'project4', 'project3', 'project2', 'project1']
+//   const projectClasses = ['project5', 'project4', 'project3', 'project2', 'project1']
 
-  projectClasses.forEach(project => {
+//   projectClasses.forEach(project => {
 
-    const button = document.querySelector(`.${project} .scroll-side`)
+//     const button = document.querySelector(`.${project} .scroll-side`)
 
-    if (scrollY > sectionPositions[project] - SCROLL_BEFORE_AMOUNT) {
-      if (scrollY > sectionPositions[project] + SCROLL_AFTER_AMOUNT) {
-        button.classList.remove('show-up')
-        button.classList.add('show-down')
-      } else {
-        button.classList.add('show-up')
-        button.classList.remove('show-down')
-      }
-    } else {
-      button.classList.remove('show-down', 'show-up')
-    }
-  })
-})
+//     if (scrollY > sectionPositions[project] - SCROLL_BEFORE_AMOUNT) {
+//       if (scrollY > sectionPositions[project] + SCROLL_AFTER_AMOUNT) {
+//         button.classList.remove('show-up')
+//         button.classList.add('show-down')
+//       } else {
+//         button.classList.add('show-up')
+//         button.classList.remove('show-down')
+//       }
+//     } else {
+//       button.classList.remove('show-down', 'show-up')
+//     }
+//   })
+// })
 
 
 

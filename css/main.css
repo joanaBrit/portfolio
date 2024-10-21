@@ -434,7 +434,7 @@ i {
   margin-top: 1rem;
 }
 
-.project-links a.scroll-side {
+/* .project-links a.scroll-side {
   transform: translateX(50px);
   opacity: 0;
   transition: all 0.5s;
@@ -443,7 +443,7 @@ i {
 .project-links a.scroll-side.show-up {
   transform: translateX(0px);
   opacity: 1;
-}
+} */
 
 .project-links a {
   text-decoration: none;
