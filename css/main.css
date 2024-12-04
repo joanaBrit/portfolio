@@ -1,5 +1,5 @@
 :root {
-  --bs-navbar-toggler-focus-width: 0
+  --bs-navbar-toggler-focus-width: 0;
 }
 
 * {
@@ -9,14 +9,14 @@
   --h1-font-size: calc(1.375rem + 1.5vw);
   --angle-color: #d12300;
   --body-color: #212529;
-  --light-grey: #3C3C3C;
+  --light-grey: #3c3c3c;
   --white-text-color: #f3f3f3;
 }
 
 body {
   color: var(--body-color);
-  background-color: #F2F2F2 !important;
-  font-family: 'Roboto Mono', monospace !important;
+  background-color: #f2f2f2 !important;
+  font-family: "Roboto Mono", monospace !important;
   /* min-height: 100vh; */
 }
 
@@ -110,11 +110,11 @@ a {
 .angle1 {
   height: 190px;
   width: 100%;
-  background-color: #F2F2F2;
+  background-color: #f2f2f2;
 }
 
 .angle1:after {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -124,7 +124,6 @@ a {
   clip-path: polygon(100% 30%, 100% 100%, 0 100%);
 }
 
-
 /*? Main Angle */
 
 .angle {
@@ -132,7 +131,7 @@ a {
 }
 
 .angle:after {
-  content: '';
+  content: "";
   position: absolute;
 }
 
@@ -147,12 +146,11 @@ a {
   padding: 4.2rem 4.2rem 6rem;
 }
 
-
 /*? Title */
 
 .title {
   background-color: var(--angle-color);
-  border: #E6E5E5;
+  border: #e6e5e5;
 }
 
 .title-container {
@@ -196,7 +194,6 @@ p {
 }
 
 @keyframes bounce {
-
   0%,
   100% {
     transform: translateY(0);
@@ -215,11 +212,11 @@ p {
 .angle2 {
   height: 180px;
   width: 100%;
-  background-color: #F2F2F2;
+  background-color: #f2f2f2;
 }
 
 .angle2:after {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -228,7 +225,6 @@ p {
   background-color: var(--angle-color);
   clip-path: polygon(0 0, 100% 100%, 100% 0);
 }
-
 
 /*? About */
 
@@ -253,7 +249,6 @@ p {
   gap: 4rem;
   display: flex;
   flex-direction: column;
-
 }
 
 .about-title h2 {
@@ -363,7 +358,7 @@ i {
   width: 90px;
   height: 90px;
   justify-content: center;
-  border: 1px solid rgba(0, 0, 0, .125);
+  border: 1px solid rgba(0, 0, 0, 0.125);
   border-radius: 5%;
   align-items: center;
   font-size: 13px;
@@ -376,7 +371,6 @@ i {
   font-size: 1.125rem;
   font-weight: normal;
 }
-
 
 /*? Projects */
 
@@ -499,7 +493,6 @@ span {
   transform: skewY(5deg);
 }
 
-
 /*? Experience */
 
 #experience {
@@ -512,7 +505,6 @@ span {
   flex-direction: column;
   flex-wrap: nowrap;
   margin: 0 10vw;
-
 }
 
 .experience-container img {
@@ -523,6 +515,7 @@ span {
   background-size: cover;
 }
 
+.wcc,
 .ga,
 .fashion-assistant,
 .visual-merchandiser {
@@ -530,12 +523,14 @@ span {
   align-items: center;
 }
 
-.ga,
-.visual-merchandiser {
+.wcc,
+.fashion-assistant {
   flex-direction: column;
 }
 
-.fashion-assistant {
+
+.ga,
+.visual-merchandiser {
   flex-direction: column-reverse;
 }
 
@@ -559,7 +554,6 @@ h3 span {
   transform: skewY(355deg);
 }
 
-
 /*? Interests */
 
 #interests {
@@ -569,7 +563,7 @@ h3 span {
 
 .interest-icon-container {
   border-radius: 50%;
-  background-color: #F2F2F2;
+  background-color: #f2f2f2;
   border: 2px solid var(--angle-color);
 }
 
@@ -616,7 +610,6 @@ h3 span {
   -ms-transform: skewY(5deg);
   transform: skewY(5deg);
 } */
-
 
 /*? Contact */
 #contact {
@@ -670,7 +663,6 @@ h3 span {
   background-color: var(--angle-color);
 }
 
-
 /*? Footer */
 
 footer {
@@ -719,7 +711,7 @@ nav.navbar {
   /* flex-direction: column;
   align-items: unset; */
   padding: 0.5rem 2rem;
-  --bs-navbar-toggler-focus-width: 0
+  --bs-navbar-toggler-focus-width: 0;
 }
 
 .navbar-top {
@@ -730,17 +722,17 @@ nav.navbar {
 }
 
 @media (min-width: 800px) {
-  nav>.nav-collapse {
-    display: unset !important
+  nav > .nav-collapse {
+    display: unset !important;
   }
 
-  nav>.navbar-top {
+  nav > .navbar-top {
     width: auto;
   }
 
   nav.navbar {
     overflow: hidden;
-    background-color: #F2F2F2;
+    background-color: #f2f2f2;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -755,7 +747,6 @@ nav.navbar {
   .navbar-toggler {
     border: none;
   }
-
 
   .sticky {
     position: fixed;
@@ -777,7 +768,6 @@ nav.navbar {
     list-style-type: none;
     margin: 0;
   }
-
 
   /* 
   .nav-pages {
@@ -812,8 +802,6 @@ nav.navbar {
     padding: 58px 0;
   } */
 
-
-
   .about-me {
     flex-direction: row;
     gap: 5rem;
@@ -832,8 +820,6 @@ nav.navbar {
         text-align: center;
         padding-bottom: 3rem;
   } */
-
-
 
   .img-wrap img {
     width: 220px;
@@ -907,6 +893,7 @@ nav.navbar {
     margin-right: 5rem;
   }
 
+  .wcc,
   .ga,
   .fashion-assistant,
   .visual-merchandiser {
